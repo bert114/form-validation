@@ -1,0 +1,48 @@
+//=====FONTS=====//
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+.font-stacked {
+  font-family: "Montserrat", sans-serif;
+  font-weight: $medium;
+  font-size: 14px;
+}
+
+//====COLORS====//
+:root {
+  font-size: 16px;
+}
+.dark-mode {
+  --clr-bg: #111111;
+  --clr-text: #f6f6f6;
+  --clr-text-darker: #e2e2e2;
+  --clr-err: #de6c74;
+  --clr-primary: #9a92ae;
+  --clr-neutral: #90caf9;
+}
+
+.light-mode {
+  --clr-bg: #f6f6f6;
+  --clr-text: #111111;
+  --clr-text-darker: #313131;
+  --clr-err: #ed323b;
+  --clr-primary: #462f62;
+  --clr-neutral: #2196f3;
+}
+
+$clr-bg: var(--clr-bg);
+$clr-text: var(--clr-text);
+$clr-primary: var(--clr-primary);
+$clr-neutral: var(--clr-neutral);
+$clr-err: var(--clr-err);
+
+$bg-gradient: linear-gradient(
+  90.1deg,
+  rgba(84, 212, 228, 1) 0.2%,
+  rgba(68, 36, 164, 1) 99.9%
+);

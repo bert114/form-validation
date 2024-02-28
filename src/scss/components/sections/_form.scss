@@ -1,0 +1,75 @@
+@use "../../util" as *;
+form {
+  --box-height: 2.6rem;
+  --input-padding: 1rem;
+  --radius: 6px;
+  --space: 0.5rem;
+  --title: 700;
+  --border-color: 1px solid var(--clr-text);
+  --border-color-err: 1px solid var(--clr-err);
+
+  display: grid;
+  gap: 1.2rem;
+
+  label {
+    font-weight: $semi-bold;
+    font-size: 12px;
+  }
+
+  > :nth-child(3) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 var(--space);
+  }
+
+  input {
+    outline: none;
+    display: block;
+    margin-top: 0.3rem;
+    height: var(--box-height);
+    width: 100%;
+    background: none;
+    border: 1px solid $clr-text;
+    border: var(--border-color);
+    padding-left: var(--input-padding);
+    border-radius: var(--radius);
+    color: $clr-text;
+    padding-right: 0.5rem;
+    font-weight: $regular;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &::placeholder {
+      color: var(--clr-text-darker);
+      font-weight: $medium;
+    }
+  }
+
+  .err {
+    font-size: 12px;
+    margin-top: 0.1rem;
+    color: $clr-err;
+    height: 0;
+    opacity: 0;
+  }
+
+  .box.warning {
+    input {
+      border: var(--border-color-err);
+    }
+
+    .err {
+      opacity: 1;
+    }
+  }
+
+  button {
+    height: var(--box-height);
+    background-color: $clr-primary;
+    border-radius: var(--radius);
+    border: none;
+    font-weight: var(--title);
+    color: $clr-bg;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+}

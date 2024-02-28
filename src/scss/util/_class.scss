@@ -1,0 +1,17 @@
+:root {
+  --small: 89%;
+}
+
+$min-width: min(var(--small), 1100px);
+
+.container {
+  width: $min-width;
+  margin-inline: auto;
+}
+
+.border {
+  border: 2px solid green;
+  > * {
+    border: 3px solid red;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <body class="light-mode">
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="card1">
+            <img src="src/assets/images/bg-card-back.png" alt="credit-back" />
+          </div>
+          <div class="card2">
+            <img src="src/assets/images/bg-card-front.png" alt="credit-front" />
+            <div class="text dark-mode">
+              <div class="pic">
+                <div></div>
+                <div></div>
+              </div>
+              <div>
+                <div id="num">0000 0000 0000</div>
+                <div class="flex">
+                  <div id="card-name">random umber</div>
+                  <div id="date-text">00/00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="/">
+          <div class="box">
+            <label for="name">CARDHOLDER NAME</label>
+            <input id="name" type="text" placeholder="e.g. Jane Appleseed" />
+            <div class="err">errors</div>
+          </div>
+          <div class="box">
+            <label for="number">CARD NUMBER</label>
+            <input
+              id="number"
+              type="number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+            <div class="err"></div>
+          </div>
+          <div class="col-wrapper">
+            <div class="box">
+              <label for="date">Date</label>
+              <input id="date" type="date" placeholder="Date" />
+              <div class="err"></div>
+            </div>
+            <div class="box">
+              <label for="cvc">CVC</label>
+              <input type="number" placeholder="e.g. 123" />
+              <div class="err"></div>
+            </div>
+          </div>
+          <button type="submit">Confirm</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

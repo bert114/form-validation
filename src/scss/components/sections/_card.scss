@@ -1,0 +1,54 @@
+.card {
+  // padding-top: 2rem;
+
+  > * {
+    width: 84%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &1 {
+    margin-left: auto;
+  }
+
+  &2 {
+    position: relative;
+    margin-top: -4.5rem;
+
+    .text {
+      padding: 1.2rem;
+      position: absolute;
+      inset: 0;
+      display: grid;
+      align-content: space-between;
+
+      .pic {
+        > :nth-child(1) {
+          background: url("../assets/images/card-logo.svg");
+          background-repeat: no-repeat;
+          background-size: auto 28px;
+          height: 1.9rem;
+        }
+      }
+
+      > :last-child {
+        line-height: 1;
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+        color: var(--clr-text-darker);
+      }
+
+      #num {
+        font-size: 1.1rem;
+        color: white;
+      }
+    }
+  }
+}
